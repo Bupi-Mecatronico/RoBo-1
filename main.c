@@ -62,7 +62,7 @@ esp_mqtt_client_handle_t mqtt_client;
 /*El Token (THINGSBOARD_TOKEN) anade la primera capa de seguridad, ya que solo el propietario 
 puede obtenerlo y es obligatorio para conectarte con el broker*/
 
-#define HIGH 1 //Comodidad para evitar poner numeros enteros en ramificaciones de codigo o estados de pines
+#define HIGH 1 //Definiciones de estados lógicos para mayor claridad en el código
 #define LOW 0
 
 
@@ -128,7 +128,7 @@ switch (event->event_id)
 
 /** @brief ESP_LOG
  * 
- * el macro ESP_LOG permite emitir mensajes por UART hacia el monitor, marcando el nivel de alerta que significa el evento.
+ * El macro ESP_LOG permite emitir mensajes por UART hacia el monitor, indicando el nivel de severidad del evento.
  * es muy similar a la funcion nativa printf, pero ESP_LOG puede marcar eventos normales, advertencias y errores criticos con
  * ESP_LOGI (normal), ESP_LOGW (advertencia) y ESP_LOGE (error critico), respectivamente.
  */
